@@ -1,72 +1,56 @@
 <!doctype html>
-<html lang="ru" data-accent="cyan">
+<html lang="ru" data-theme="green">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#07070c">
+  <meta name="theme-color" content="#07090d">
   <title>retr1kze — разработчик и CTF-энтузиаст</title>
-  <meta name="description" content="Портфолио retr1kze (Error8089): веб-разработка, Python, CTF и Linux. Проекты, навыки и контакты.">
+  <meta name="description" content="Портфолио retr1kze (Error8089): веб-разработка, Python, CTF, Arch Linux. Живой терминал, проекты и контакты.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="retr1kze — портфолио">
-  <meta property="og:description" content="Разрабатываю интерфейсы, пишу на Python и разбираю CTF-задачи.">
+  <meta property="og:title" content="retr1kze — портфолио v2">
+  <meta property="og:description" content="Console edition: живой терминал, навыки, проекты с GitHub.">
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/90235870?v=4">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к содержимому</a>
 
-  <svg class="svg-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.2c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.11 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z"/></symbol>
-    <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
-    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 4v15M19 12l-7 7-7-7"/></symbol>
-    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m6 14 6-6 6 6"/></symbol>
-    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></symbol>
-    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
-    <symbol id="i-terminal" viewBox="0 0 24 24"><path d="m4 17 6-6-6-6M12 19h8"/></symbol>
-    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
-    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M19 9h3M19 15h3M2 9h3M2 15h3"/></symbol>
-    <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
-    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
-    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6 18 18M18 6 6 18"/></symbol>
-    <symbol id="i-palette" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r=".6" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".6" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".6" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".6" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.65-.75 1.65-1.69 0-.43-.18-.83-.44-1.12-.29-.29-.44-.65-.44-1.13a1.64 1.64 0 0 1 1.67-1.67h2c3.05 0 5.55-2.5 5.55-5.55C22 6.01 17.46 2 12 2Z"/></symbol>
-    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
-    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
-    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.8 1.2 6.9L12 17.8 5.8 21l1.2-6.9-5-4.8 6.9-1L12 2Z"/></symbol>
-    <symbol id="i-fork" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2.5"/><circle cx="18" cy="5" r="2.5"/><circle cx="12" cy="19" r="2.5"/><path d="M6 8v2a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4V8M12 14v2"/></symbol>
-  </svg>
+  <!-- BOOT OVERLAY -->
+  <div class="boot" id="boot" aria-hidden="true">
+    <pre class="boot-log" id="boot-log"></pre>
+    <p class="boot-skip">нажми любую клавишу, чтобы пропустить</p>
+  </div>
 
-  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
-  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
-  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+  <!-- CRT / MATRIX LAYERS -->
+  <div class="crt" aria-hidden="true"></div>
+  <canvas class="matrix" id="matrix" hidden aria-hidden="true"></canvas>
 
-  <header class="site-header" id="site-header">
+  <header class="topbar" id="topbar">
     <nav class="nav container" aria-label="Основная навигация">
-      <a class="logo" href="#home">
-        <span class="logo-mark">&lt;/&gt;</span><span>retr1kze</span><span class="logo-dot">.dev</span><span class="sr-only"> — на главную</span>
+      <a class="logo" href="#top">
+        <span class="logo-prompt">guest@retr1kze</span><span class="logo-path">:~$</span>
+        <span class="logo-caret" aria-hidden="true">▌</span>
+        <span class="sr-only">— на главную</span>
       </a>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#home" class="nav-link">Главная</a></li>
-        <li><a href="#about" class="nav-link">Обо мне</a></li>
-        <li><a href="#skills" class="nav-link">Навыки</a></li>
-        <li><a href="#projects" class="nav-link">Проекты</a></li>
-        <li><a href="#contact" class="nav-link">Контакты</a></li>
+        <li><a class="nav-link" href="#terminal" data-nav>Терминал</a></li>
+        <li><a class="nav-link" href="#about" data-nav>Обо мне</a></li>
+        <li><a class="nav-link" href="#skills" data-nav>Навыки</a></li>
+        <li><a class="nav-link" href="#projects" data-nav>Проекты</a></li>
+        <li><a class="nav-link" href="#contact" data-nav>Контакты</a></li>
       </ul>
       <div class="nav-actions">
-        <button class="icon-btn" id="accent-toggle" type="button" aria-label="Сменить акцентный цвет" title="Сменить цвет">
-          <svg class="icon" aria-hidden="true"><use href="#i-palette"/></svg>
-        </button>
-        <a class="btn btn-small nav-cta" href="https://github.com/Error8089" target="_blank" rel="noopener noreferrer">
-          GitHub <svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+        <a class="btn btn-ghost" href="https://github.com/Error8089" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> GitHub
         </a>
         <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню">
-          <svg class="icon menu-icon-open" aria-hidden="true"><use href="#i-menu"/></svg>
-          <svg class="icon menu-icon-close" aria-hidden="true"><use href="#i-close"/></svg>
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
         </button>
       </div>
     </nav>
@@ -74,254 +58,265 @@
 
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
     <nav class="mobile-menu-inner" aria-label="Мобильная навигация">
-      <a href="#home"><span>01</span> Главная</a>
+      <a href="#terminal"><span>01</span> Терминал</a>
       <a href="#about"><span>02</span> Обо мне</a>
       <a href="#skills"><span>03</span> Навыки</a>
       <a href="#projects"><span>04</span> Проекты</a>
       <a href="#contact"><span>05</span> Контакты</a>
       <div class="mobile-menu-foot">
-        <a href="https://github.com/Error8089" target="_blank" rel="noopener noreferrer"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-github"/></svg> github.com/Error8089</a>
+        <a href="https://github.com/Error8089" target="_blank" rel="noopener noreferrer">
+          <svg class="icon icon-sm" aria-hidden="true"><use href="#i-github"/></svg> github.com/Error8089
+        </a>
       </div>
     </nav>
   </div>
 
   <main id="main">
-    <!-- HERO -->
-    <section class="hero" id="home">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
       <div class="hero-bg" aria-hidden="true">
-        <div class="aurora aurora-1"></div>
-        <div class="aurora aurora-2"></div>
-        <div class="hero-grid"></div>
         <div class="hero-glow"></div>
+        <div class="hero-grid"></div>
       </div>
 
       <div class="container hero-inner">
-        <div class="hero-copy">
-          <div class="status-badge reveal"><span class="pulse-dot"></span> открыт к новым идеям и коллаборациям</div>
-          <p class="eyebrow reveal">&gt; привет, мир_</p>
-          <h1 class="hero-title reveal">
-            Я <span class="gradient-text" data-name>retr1kze</span><br>
-            <span class="hero-title-line">создаю <span class="typed-wrap"><span id="typed-text">веб-интерфейсы</span><span class="caret">|</span></span></span>
-          </h1>
-          <p class="hero-desc reveal">
-            Разработчик, любитель Linux и CTF-энтузиаст. Делаю аккуратные интерфейсы,
-            пишу Python и обожаю разбираться, как всё устроено под капотом.
-          </p>
-          <div class="hero-actions reveal">
-            <a class="btn btn-primary" href="#projects">
-              Смотреть проекты <svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow-down"/></svg>
-            </a>
-            <a class="btn btn-outline" href="https://github.com/Error8089" target="_blank" rel="noopener noreferrer">
-              <svg class="icon icon-sm" aria-hidden="true"><use href="#i-github"/></svg> Мой GitHub
-            </a>
-          </div>
-          <div class="hero-socials reveal">
-            <span>найди меня тут:</span>
-            <a href="https://github.com/Error8089" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
-            <a href="mailto:rootk1tretr0@gmail.com" aria-label="Email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a>
-            <button class="social-copy" id="copy-email-small" type="button" aria-label="Скопировать email"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg></button>
-          </div>
+        <p class="hero-eyebrow reveal">
+          <span class="ph">➜</span> ~/portfolio <span class="ph">git:(</span><span class="git-branch">v2</span><span class="ph">)</span> ./start.sh
+        </p>
+        <h1 class="hero-title reveal">
+          retr1kze<span class="hero-underscore" aria-hidden="true"></span>
+        </h1>
+        <p class="hero-typed reveal">
+          <span class="ph">$</span> <span id="typed">загрузка…</span><span class="type-caret" aria-hidden="true">▌</span>
+        </p>
+        <p class="hero-desc reveal">
+          Разработчик, CTF-энтузиаст и убеждённый архарист. Пишу Python, собираю
+          интерфейсы и разбираюсь, как всё устроено под капотом — вплоть до байтов.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#terminal">
+            Открыть терминал <svg class="icon icon-sm" aria-hidden="true"><use href="#i-terminal"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/Error8089" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-sm" aria-hidden="true"><use href="#i-github"/></svg> Мой GitHub
+          </a>
         </div>
 
-        <div class="hero-visual reveal" style="--delay:.15s">
-          <div class="avatar-orbit" aria-hidden="true"></div>
-          <div class="avatar-frame">
-            <img src="https://avatars.githubusercontent.com/u/90235870?v=4" alt="Аватар пользователя Error8089" width="280" height="280" fetchpriority="high">
-          </div>
-          <div class="float-card float-card-followers">
-            <span class="float-label"><svg class="icon icon-xs" aria-hidden="true"><use href="#i-github"/></svg> followers</span>
+        <div class="hero-meta reveal">
+          <div class="meta-chip">
+            <span class="meta-label">followers</span>
             <strong data-stat="followers">—</strong>
           </div>
-          <div class="float-card float-card-repos">
-            <span class="float-label">public repos</span>
+          <div class="meta-chip">
+            <span class="meta-label">public repos</span>
             <strong data-stat="repos">—</strong>
           </div>
-          <div class="terminal-card">
-            <div class="terminal-head">
-              <span class="terminal-dots"><i></i><i></i><i></i></span>
-              <span>~/whoami — bash</span>
-            </div>
-            <div class="terminal-body">
-              <p><span class="prompt">$</span> whoami</p>
-              <p class="t-accent" data-name>retr1kze</p>
-              <p><span class="prompt">$</span> cat stack.txt</p>
-              <p>Python · HTML · CSS · JS · Linux</p>
-              <p><span class="prompt">$</span> <span class="caret">▌</span></p>
-            </div>
+          <div class="meta-chip">
+            <span class="meta-label">на github с</span>
+            <strong data-stat="since">—</strong>
+          </div>
+          <div class="meta-chip meta-chip-status">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <strong>открыт к идеям</strong>
           </div>
         </div>
       </div>
 
-      <a class="scroll-hint" href="#about">
-        <span>листай вниз</span><svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+      <a class="scroll-hint" href="#terminal" aria-label="Прокрутить к терминалу">
+        <span>scroll ↓</span>
       </a>
     </section>
 
-    <!-- TICKER -->
+    <!-- ============ TICKER ============ -->
     <div class="ticker" aria-hidden="true">
       <div class="ticker-track">
         <div class="ticker-group">
-          <span>HTML5</span><b>✦</b><span>CSS3</span><b>✦</b><span>JavaScript</span><b>✦</b><span>Python</span><b>✦</b><span>Linux</span><b>✦</b><span>Git</span><b>✦</b><span>CTF</span><b>✦</b><span>Arch</span><b>✦</b>
+          <span>web-dev</span><b>✦</b><span>python</span><b>✦</b><span>ctf</span><b>✦</b><span>arch linux</span><b>✦</b><span>hyprland</span><b>✦</b><span>neovim</span><b>✦</b><span>git</span><b>✦</b><span>self-taught</span><b>✦</b><span>btw</span><b>✦</b>
         </div>
         <div class="ticker-group">
-          <span>HTML5</span><b>✦</b><span>CSS3</span><b>✦</b><span>JavaScript</span><b>✦</b><span>Python</span><b>✦</b><span>Linux</span><b>✦</b><span>Git</span><b>✦</b><span>CTF</span><b>✦</b><span>Arch</span><b>✦</b>
+          <span>web-dev</span><b>✦</b><span>python</span><b>✦</b><span>ctf</span><b>✦</b><span>arch linux</span><b>✦</b><span>hyprland</span><b>✦</b><span>neovim</span><b>✦</b><span>git</span><b>✦</b><span>self-taught</span><b>✦</b><span>btw</span><b>✦</b>
         </div>
       </div>
     </div>
 
-    <!-- ABOUT -->
+    <!-- ============ TERMINAL ============ -->
+    <section class="section section-term" id="terminal">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="path"><span class="ph">➜</span> ~/portfolio <span class="dim">— интерактивный шелл</span></p>
+          <h2>Терминал <span class="ph-outline">v2</span></h2>
+          <p class="section-sub">Это настоящий шелл-эмулятор. Введи <code>help</code> и жми Enter — или просто тыкай кнопки:</p>
+        </div>
+
+        <div class="term reveal" id="term">
+          <div class="term-head">
+            <span class="term-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="term-title">guest@retr1kze: ~/portfolio — bash</span>
+            <span class="term-hint" aria-hidden="true">tab ⇥ autocomplete · ↑↓ history</span>
+          </div>
+          <div class="term-body" id="term-body" tabindex="-1">
+            <div class="term-out" id="term-out" aria-live="polite"></div>
+            <div class="term-input-line" id="term-input-line">
+              <label class="term-prompt" for="term-input">guest@retr1kze<span class="dim">:~$</span></label>
+              <input class="term-input" id="term-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="введи команду… (help)" aria-label="Командная строка">
+            </div>
+          </div>
+        </div>
+
+        <div class="term-quick reveal" role="group" aria-label="Быстрые команды">
+          <button class="chip-cmd" type="button" data-cmd="neofetch">neofetch</button>
+          <button class="chip-cmd" type="button" data-cmd="skills">skills</button>
+          <button class="chip-cmd" type="button" data-cmd="projects">projects</button>
+          <button class="chip-cmd" type="button" data-cmd="contact">contact</button>
+          <button class="chip-cmd" type="button" data-cmd="matrix">matrix</button>
+          <button class="chip-cmd" type="button" data-cmd="sudo rm -rf /">sudo rm -rf /</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
     <section class="section" id="about">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">// 01. ОБО МНЕ</p>
-          <h2>Немного <span class="gradient-text">о себе</span></h2>
+          <p class="path"><span class="ph">➜</span> ~/portfolio <span class="dim">$ cat about.txt</span></p>
+          <h2>Обо <span class="ph">мне</span></h2>
         </div>
 
         <div class="about-grid">
           <div class="about-text reveal">
-            <p class="lead">Привет! Я retr1kze — разработчик, который любит строить вещи от идеи до работающего результата.</p>
-            <p>Начинаю с интерфейса и заканчивая логикой: мне нравится, когда продукт не только работает, но и приятно выглядит. В свободное время разбираю CTF-задачи, ковыряю Linux и учусь новому — обычно на практике, а не по книжкам.</p>
-            <p>Живу в ритме Arch + Hyprland, ценю чистый код, быстрые интерфейсы и честные решения. Если тебе нужен человек, который включится и сделает — я здесь.</p>
-            <div class="about-tags">
-              <span>#self-taught</span><span>#linux</span><span>#ctf</span><span>#buildinpublic</span>
+            <p class="lead">Привет! Я <strong class="ph">retr1kze</strong> — разработчик, который любит доводить вещи от идеи до работающего результата.</p>
+            <p>Мне интересно всё целиком: и как выглядит интерфейс, и как крутится логика под ним. В свободное время решаю CTF-таски, ковыряю Linux и учусь новому — на практике, а не по книжкам.</p>
+            <p>Живу на Arch + Hyprland, ценю чистый код, быстрые интерфейсы и честные решения. Если нужен человек, который включится и сделает — ты по адресу.</p>
+            <div class="about-tags" aria-label="Теги">
+              <span>#self-taught</span><span>#linux</span><span>#ctf</span><span>#build-in-public</span>
             </div>
           </div>
 
-          <div class="about-side">
-            <div class="info-card reveal" style="--delay:.05s">
-              <span class="info-icon"><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg></span>
+          <aside class="about-side">
+            <div class="fact reveal" style="--delay:.05s">
+              <span class="fact-icon"><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg></span>
               <div><strong>Подход</strong><p>Сначала понять задачу, потом написать минимум кода, который её решает.</p></div>
             </div>
-            <div class="info-card reveal" style="--delay:.12s">
-              <span class="info-icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
-              <div><strong>Интерес</strong><p>Кибербезопасность, CTF и всё, что связано с тем, как системы работают изнутри.</p></div>
+            <div class="fact reveal" style="--delay:.12s">
+              <span class="fact-icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+              <div><strong>Интерес</strong><p>Кибербезопасность, CTF и то, как системы работают изнутри.</p></div>
             </div>
-            <div class="info-card reveal" style="--delay:.19s">
-              <span class="info-icon"><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg></span>
+            <div class="fact reveal" style="--delay:.19s">
+              <span class="fact-icon"><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg></span>
               <div><strong>Среда</strong><p>Arch Linux, Hyprland, neovim. Комфорт начинается с рабочего стола.</p></div>
             </div>
-
-            <div class="stats-row">
-              <div class="stat-box reveal" style="--delay:.24s"><strong data-stat="repos">—</strong><span>репозиториев</span></div>
-              <div class="stat-box reveal" style="--delay:.3s"><strong data-stat="followers">—</strong><span>подписчиков</span></div>
-              <div class="stat-box reveal" style="--delay:.36s"><strong data-stat="since">—</strong><span>на GitHub с</span></div>
-            </div>
-          </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- ============ SKILLS ============ -->
     <section class="section section-alt" id="skills">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">// 02. НАВЫКИ</p>
-          <h2>Мой <span class="gradient-text">инструментарий</span></h2>
-          <p class="section-sub">Технологии, с которыми я работаю и которые продолжаю осваивать.</p>
+          <p class="path"><span class="ph">➜</span> ~ <span class="dim">$ pacman -Qs skills</span></p>
+          <h2>Навыки <span class="dim">/</span> <span class="ph">пакеты</span></h2>
+          <p class="section-sub">Установлено через pacman. <span class="dim">*</span> — в процессе сборки из AUR.</p>
         </div>
 
-        <div class="skills-grid">
-          <article class="skill-card reveal" style="--delay:.04s">
-            <div class="skill-card-top">
-              <span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></span>
-              <span class="skill-num">01</span>
-            </div>
-            <h3>Frontend</h3>
-            <p>Семантическая вёрстка, адаптивные интерфейсы и плавные анимации без тяжёлых библиотек.</p>
-            <ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>GSAP*</li></ul>
-            <div class="skill-bar"><span style="--level:82%"></span></div>
-          </article>
-
-          <article class="skill-card reveal" style="--delay:.1s">
-            <div class="skill-card-top">
-              <span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg></span>
-              <span class="skill-num">02</span>
-            </div>
-            <h3>Python</h3>
-            <p>Скрипты, автоматизация и серверная логика. Люблю понятный и читаемый код.</p>
-            <ul class="chips"><li>Python</li><li>Flask*</li><li>SQLite*</li><li>REST*</li></ul>
-            <div class="skill-bar"><span style="--level:72%"></span></div>
-          </article>
-
-          <article class="skill-card reveal" style="--delay:.16s">
-            <div class="skill-card-top">
-              <span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg></span>
-              <span class="skill-num">03</span>
-            </div>
-            <h3>Инструменты</h3>
-            <p>Git, терминал и уютное окружение. Быстро ориентируюсь в Linux и консоли.</p>
-            <ul class="chips"><li>Git</li><li>Linux</li><li>Arch</li><li>Hyprland</li><li>Neovim</li></ul>
-            <div class="skill-bar"><span style="--level:88%"></span></div>
-          </article>
-
-          <article class="skill-card reveal" style="--delay:.22s">
-            <div class="skill-card-top">
-              <span class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
-              <span class="skill-num">04</span>
-            </div>
-            <h3>Безопасность</h3>
-            <p>CTF-челленджи, базы веб-уязвимостей и понимание того, как ломается «простое».</p>
-            <ul class="chips"><li>CTF</li><li>Web</li><li>Crypto*</li><li>Stego*</li></ul>
-            <div class="skill-bar"><span style="--level:64%"></span></div>
-          </article>
+        <div class="pacman reveal">
+          <div class="pacman-row">
+            <span class="pacman-group">[frontend]</span>
+            <span class="pacman-pkg">html5 <em>5.0-1</em></span>
+            <span class="pacman-pkg">css3 <em>3.0-2</em></span>
+            <span class="pacman-pkg">javascript <em>ES2026-1</em></span>
+            <span class="pacman-pkg">responsive <em>mobile-first-1</em></span>
+          </div>
+          <div class="pacman-row">
+            <span class="pacman-group">[python]</span>
+            <span class="pacman-pkg">python <em>3.13-1</em></span>
+            <span class="pacman-pkg">flask <em>3.0-1*</em></span>
+            <span class="pacman-pkg">sqlite <em>3.46-1*</em></span>
+            <span class="pacman-pkg">rest-api <em>json-2*</em></span>
+          </div>
+          <div class="pacman-row">
+            <span class="pacman-group">[tools]</span>
+            <span class="pacman-pkg">git <em>2.56-1</em></span>
+            <span class="pacman-pkg">linux <em>6.x-1</em></span>
+            <span class="pacman-pkg">arch <em>btw-1</em></span>
+            <span class="pacman-pkg">hyprland <em>wayland-1</em></span>
+            <span class="pacman-pkg">neovim <em>0.11-1</em></span>
+          </div>
+          <div class="pacman-row">
+            <span class="pacman-group">[security]</span>
+            <span class="pacman-pkg">ctf <em>2026-1</em></span>
+            <span class="pacman-pkg">websec <em>owasp-1</em></span>
+            <span class="pacman-pkg">crypto <em>rsa-1*</em></span>
+            <span class="pacman-pkg">stego <em>lsb-1*</em></span>
+          </div>
+          <div class="pacman-total"><span class="ph">➜</span> 16 пакетов (4 группы) установлено · зависимостей: кофе ☕</div>
         </div>
-        <p class="skills-note reveal">* — в процессе освоения. Честность лучше красивого резюме.</p>
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- ============ PROJECTS ============ -->
     <section class="section" id="projects">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">// 03. ПРОЕКТЫ</p>
-          <h2>То, что я <span class="gradient-text">сделал</span></h2>
-          <p class="section-sub">Репозитории подтягиваются напрямую с GitHub при открытии страницы.</p>
+          <p class="path"><span class="ph">➜</span> ~/portfolio <span class="dim">$ gh repo list Error8089 --limit 6</span></p>
+          <h2>Живые <span class="ph">проекты</span></h2>
+          <p class="section-sub">Данные подтягиваются с GitHub прямо при открытии страницы.</p>
         </div>
 
         <div class="projects-grid" id="projects-grid" aria-live="polite">
-          <div class="project-card skeleton"><div class="sk sk-icon"></div><div class="sk sk-title"></div><div class="sk sk-line"></div><div class="sk sk-line short"></div></div>
-          <div class="project-card skeleton"><div class="sk sk-icon"></div><div class="sk sk-title"></div><div class="sk sk-line"></div><div class="sk sk-line short"></div></div>
+          <div class="project-card skeleton"><div class="sk sk-name"></div><div class="sk sk-line"></div><div class="sk sk-line short"></div></div>
+          <div class="project-card skeleton"><div class="sk sk-name"></div><div class="sk sk-line"></div><div class="sk sk-line short"></div></div>
+          <div class="project-card skeleton"><div class="sk sk-name"></div><div class="sk sk-line"></div><div class="sk sk-line short"></div></div>
         </div>
 
         <div class="projects-foot reveal">
-          <a class="btn btn-outline" href="https://github.com/Error8089?tab=repositories" target="_blank" rel="noopener noreferrer">
-            Все репозитории <svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          <a class="btn btn-ghost" href="https://github.com/Error8089?tab=repositories" target="_blank" rel="noopener noreferrer">
+            Все репозитории <svg class="icon icon-sm" aria-hidden="true"><use href="#i-external"/></svg>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- ============ CONTACT ============ -->
     <section class="section contact-section" id="contact">
       <div class="contact-glow" aria-hidden="true"></div>
       <div class="container contact-inner reveal">
-        <p class="eyebrow">// 04. КОНТАКТЫ</p>
-        <h2>Есть идея?<br><span class="gradient-text">Давайте обсудим.</span></h2>
+        <p class="path"><span class="ph">➜</span> ~ <span class="dim">$ ping retr1kze</span></p>
+        <h2 class="contact-title">Есть идея?<br><span class="ph">Давай обсудим.</span></h2>
         <p class="contact-desc">Открыт к интересным задачам, совместным проектам и просто разговорам о технологиях. Напиши — отвечу.</p>
-        <div class="hero-actions">
+        <div class="contact-actions">
           <button class="btn btn-primary" id="copy-email" type="button">
             <svg class="icon icon-sm" aria-hidden="true"><use href="#i-copy"/></svg> Скопировать email
           </button>
-          <a class="btn btn-outline" href="https://github.com/Error8089" target="_blank" rel="noopener noreferrer">
+          <a class="btn btn-ghost" href="https://github.com/Error8089" target="_blank" rel="noopener noreferrer">
             <svg class="icon icon-sm" aria-hidden="true"><use href="#i-github"/></svg> Написать в GitHub
           </a>
         </div>
-        <p class="contact-email" id="contact-email">rootk1tretr0@gmail.com</p>
+        <p class="contact-email"><a href="mailto:rootk1tretr0@gmail.com">rootk1tretr0@gmail.com</a></p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer-inner">
-      <a class="logo" href="#home"><span class="logo-mark">&lt;/&gt;</span><span>retr1kze</span><span class="logo-dot">.dev</span></a>
-      <p>© <span id="year">2026</span> retr1kze · сделано на Arch Linux + Hyprland <span class="heart">♥</span></p>
-      <a class="footer-top" href="#home" aria-label="Наверх"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow-up"/></svg></a>
+      <p class="footer-line"><span class="ph">➜</span> ~/portfolio <span class="dim">$</span> echo "© <span id="year">2026</span> retr1kze — сделано на Arch Linux ♥"</p>
+      <p class="footer-line dim">uptime сессии: <span id="uptime">00:00:00</span> · esc — выключить матрицу</p>
     </div>
   </footer>
 
-  <button class="to-top" id="to-top" type="button" aria-label="Прокрутить наверх">
-    <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
-  </button>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <svg class="svg-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.2c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.11 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><path d="m4 17 6-6-6-6M12 19h8"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M19 9h3M19 15h3M2 9h3M2 15h3"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.8 1.2 6.9L12 17.8 5.8 21l1.2-6.9-5-4.8 6.9-1L12 2Z"/></symbol>
+    <symbol id="i-fork" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2.5"/><circle cx="18" cy="5" r="2.5"/><circle cx="12" cy="19" r="2.5"/><path d="M6 8v2a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4V8M12 14v2"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6 18 18M18 6 6 18"/></symbol>
+  </svg>
 </body>
 </html>
